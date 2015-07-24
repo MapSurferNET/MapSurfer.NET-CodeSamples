@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapViewer", "WindowsForms\MapViewer\MapViewer.csproj", "{B3E39DD7-2E36-4588-A6CF-309C9CE08287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsForms", "WindowsForms", "{7E1D728D-7D7F-4435-A6CF-184FA2F0E946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tiling", "Tiling", "{569E9E16-7C0B-4713-B6B4-0572A16AB24D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A9344FD7-5E4B-4708-8588-2446FED8A298}"
+	ProjectSection(SolutionItems) = preProject
+		Common\AssemblyLoader.cs = Common\AssemblyLoader.cs
+		Common\MSNUtility.cs = Common\MSNUtility.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labeling", "Labeling", "{D62EBEFF-AA43-4480-8B17-AAA9F0A1226E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Symbolization", "Symbolization", "{D0C81C65-E598-43CC-8C0A-025526BA43DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{500F0EA0-98A7-4785-9773-A3C1D1AFEA6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderMapToImage", "Utils\RenderMapToImage\RenderMapToImage.csproj", "{A2774629-CBD5-498E-890C-9D84631A3128}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3E39DD7-2E36-4588-A6CF-309C9CE08287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E39DD7-2E36-4588-A6CF-309C9CE08287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E39DD7-2E36-4588-A6CF-309C9CE08287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E39DD7-2E36-4588-A6CF-309C9CE08287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2774629-CBD5-498E-890C-9D84631A3128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2774629-CBD5-498E-890C-9D84631A3128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2774629-CBD5-498E-890C-9D84631A3128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2774629-CBD5-498E-890C-9D84631A3128}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3E39DD7-2E36-4588-A6CF-309C9CE08287} = {7E1D728D-7D7F-4435-A6CF-184FA2F0E946}
+		{A2774629-CBD5-498E-890C-9D84631A3128} = {500F0EA0-98A7-4785-9773-A3C1D1AFEA6B}
+	EndGlobalSection
+EndGlobal

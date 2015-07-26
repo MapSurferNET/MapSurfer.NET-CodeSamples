@@ -34,10 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoAPI">
-      <HintPath>C:\Program Files\MapSurfer.NET\2.1\Core\GeoAPI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="MapSurfer.Core">
       <HintPath>C:\Program Files\MapSurfer.NET\2.1\Core\MapSurfer.Core.dll</HintPath>
       <Private>False</Private>
@@ -46,16 +42,11 @@
       <HintPath>C:\Program Files\MapSurfer.NET\2.1\Core\MapSurfer.System.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ProjNet">
-      <HintPath>C:\Program Files\MapSurfer.NET\2.1\Core\ProjNet.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\Common\AssemblyLoader.cs">

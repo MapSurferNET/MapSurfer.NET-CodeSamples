@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{500F0EA0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderMapToImage", "Utils\RenderMapToImage\RenderMapToImage.csproj", "{A2774629-CBD5-498E-890C-9D84631A3128}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatasourceViewer", "WindowsForms\DatasourceViewer\DatasourceViewer.csproj", "{3177B4C4-025F-4B51-8666-CA1AAF000054}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{A2774629-CBD5-498E-890C-9D84631A3128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2774629-CBD5-498E-890C-9D84631A3128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2774629-CBD5-498E-890C-9D84631A3128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3177B4C4-025F-4B51-8666-CA1AAF000054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3177B4C4-025F-4B51-8666-CA1AAF000054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3177B4C4-025F-4B51-8666-CA1AAF000054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3177B4C4-025F-4B51-8666-CA1AAF000054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B3E39DD7-2E36-4588-A6CF-309C9CE08287} = {7E1D728D-7D7F-4435-A6CF-184FA2F0E946}
 		{A2774629-CBD5-498E-890C-9D84631A3128} = {500F0EA0-98A7-4785-9773-A3C1D1AFEA6B}
+		{3177B4C4-025F-4B51-8666-CA1AAF000054} = {7E1D728D-7D7F-4435-A6CF-184FA2F0E946}
 	EndGlobalSection
 EndGlobal

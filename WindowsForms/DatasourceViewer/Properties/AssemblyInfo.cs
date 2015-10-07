@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MapViewer")]
+[assembly: AssemblyTitle("DatasourceViewer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MapSurfer.NET")]
+[assembly: AssemblyCompany("MapSurfer.NET")]
+[assembly: AssemblyProduct("DatasourceViewer")]
 [assembly: AssemblyCopyright("Copyright © MapSurfer.NET 2008-2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("40758a95-ba04-46ee-acc6-a90cbf083fcf")]
+[assembly: Guid("250600a4-6536-4f72-be6b-3213eb5dcdf3")]
 
 // Version information for an assembly consists of the following four values:
 //

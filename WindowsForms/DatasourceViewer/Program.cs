@@ -6,12 +6,14 @@
 //
 //==========================================================================================
 using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using MapSurfer.Utilities;
 
-namespace MapSurfer.Samples
+namespace DatasourceViewer
 {
   static class Program
   {
@@ -26,10 +28,9 @@ namespace MapSurfer.Samples
 
       string version = MSNUtility.TryDetectInstalledVersion();  // or one can define version manually MSNUtility.SetCurrentMSNVersion(..)
       MSNUtility.SetCurrentMSNVersion(version);
-      AssemblyLoader.AddSearchPath(Path.Combine(MSNUtility.GetMSNInstallPath(), "Studio"));
       AssemblyLoader.Register(AppDomain.CurrentDomain, version);
 
-      Application.Run(new frmMain());
-    } 
+      Application.Run(new frmDatasourceViewer());
+    }
   }
 }

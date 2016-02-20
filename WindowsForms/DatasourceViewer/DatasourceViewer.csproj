@@ -33,25 +33,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoAPI, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\GeoAPI.dll</HintPath>
+    <Reference Include="GeoAPI">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\GeoAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Core, Version=2.10.5700.37597, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.Core.dll</HintPath>
+    <Reference Include="MapSurfer.Core">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Data, Version=2.10.5700.37596, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.Data.dll</HintPath>
+    <Reference Include="MapSurfer.Data">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Geometries, Version=2.10.5700.37595, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.Geometries.dll</HintPath>
+    <Reference Include="MapSurfer.Geometries">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.Geometries.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.System, Version=2.10.5700.37592, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.System.dll</HintPath>
+    <Reference Include="MapSurfer.System">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.System.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

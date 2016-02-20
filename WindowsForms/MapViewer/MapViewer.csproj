@@ -35,33 +35,36 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoAPI">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\GeoAPI.dll</HintPath>
+    <Reference Include="GeoAPI, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\GeoAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Core">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\MapSurfer.Core.dll</HintPath>
+    <Reference Include="MapSurfer.Core, Version=2.40.5827.36048, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Geometries">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\MapSurfer.Geometries.dll</HintPath>
+    <Reference Include="MapSurfer.Geometries, Version=2.40.5827.36039, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.Geometries.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.System">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\MapSurfer.System.dll</HintPath>
+    <Reference Include="MapSurfer.System, Version=2.40.5827.36023, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.4\lib\net45\Core\MapSurfer.System.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="MapSurfer.Windows.Forms, Version=2.10.5683.28326, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\MapSurfer.NET.UI.2.1\lib\net45\MapSurfer.Windows.Forms.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="NetGraphics32.Drawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\MapSurfer.NET.UI.2.1\lib\net45\NetGraphics32.Drawing.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="NetGraphics32.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\MapSurfer.NET.UI.2.1\lib\net45\NetGraphics32.Windows.Forms.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

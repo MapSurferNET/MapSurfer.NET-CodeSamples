@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,20 +9,25 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MapSurfer.Samples</RootNamespace>
     <AssemblyName>MapViewer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <Prefer32Bit>False</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,34 +39,40 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GeoAPI">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\GeoAPI.dll</HintPath>
+    <Reference Include="GeoAPI, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\GeoAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Core">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\MapSurfer.Core.dll</HintPath>
+    <Reference Include="MapSurfer.Core, Version=2.60.6279.40806, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Geometries">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\MapSurfer.Geometries.dll</HintPath>
+    <Reference Include="MapSurfer.Geometries, Version=2.60.6279.40805, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.Geometries.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.System">
-      <HintPath>..\..\packages\MapSurfer.NET.Core.2.1\lib\net45\Core\MapSurfer.System.dll</HintPath>
+    <Reference Include="MapSurfer.System, Version=2.60.6279.40803, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.System.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Windows.Forms, Version=2.10.5683.28326, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\MapSurfer.NET.UI.2.1\lib\net45\MapSurfer.Windows.Forms.dll</HintPath>
+    <Reference Include="MapSurfer.Windows.Forms, Version=2.60.6279.40809, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MapSurfer.NET.UI.2.6\lib\net46\MapSurfer.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="NetGraphics32.Drawing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\MapSurfer.NET.UI.2.1\lib\net45\NetGraphics32.Drawing.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.UI.2.6\lib\net46\NetGraphics32.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="NetGraphics32.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\MapSurfer.NET.UI.2.1\lib\net45\NetGraphics32.Windows.Forms.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.UI.2.6\lib\net46\NetGraphics32.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

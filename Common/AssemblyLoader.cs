@@ -1,7 +1,7 @@
 ﻿//==========================================================================================
 //
 //		MapSurfer.Utilities
-//		Copyright (c) 2008-2015, MapSurfer.NET
+//		Copyright (c) 2008-2017, MapSurfer.NET
 //
 //    Authors: Maxim Rylov
 //

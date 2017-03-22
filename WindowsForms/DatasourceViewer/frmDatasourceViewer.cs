@@ -16,6 +16,7 @@ using MapSurfer.Data.Expressions;
 using MapSurfer.Data.Filters;
 using MapSurfer.Geometries;
 using MapSurfer.Utilities;
+using MapSurfer;
 
 namespace DatasourceViewer
 {
@@ -64,7 +65,7 @@ namespace DatasourceViewer
           Envelope env = m_dsProvider.GetExtent();
           List<string> properties = m_dsProvider.Information.GetAttributeNames();
           properties.Remove("_geom_");
-          DataSourceQuery query = new DataSourceQuery(env, 1, null, null, properties);
+          DataSourceQuery query = new DataSourceQuery(env, new Tuple<double, double>(1.0, 1.0), null, null, properties);
           IFeatureDataReader dataReader = m_dsProvider.GetFeatureReader(query, FeatureFactory.Default);
           int i = 0;
 
@@ -146,7 +147,7 @@ namespace DatasourceViewer
             {
               this.Cursor = Cursors.WaitCursor;
 
-              m_dsProvider = (DataSourceProvider)provEditor.CreateProvider();
+              m_dsProvider = (DataSourceProvider)provEditor.CreateProvider(new NullProgressIndicator());
 
               UpdateControls();
               UpdateDataGridView(m_dsProvider.Information);

@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DatasourceViewer</RootNamespace>
     <AssemblyName>DatasourceViewer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,24 +35,28 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoAPI, Version=1.1.0.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\GeoAPI.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\GeoAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Core, Version=2.10.5700.37597, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MapSurfer.Core, Version=2.40.5826.29852, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.Core.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.Core.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Data, Version=2.10.5700.37596, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MapSurfer.Data, Version=2.40.5826.29850, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.Data.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.Geometries, Version=2.10.5700.37595, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MapSurfer.Geometries, Version=2.40.5826.29849, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.Geometries.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.Geometries.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="MapSurfer.System, Version=2.10.5700.37592, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MapSurfer.System, Version=2.40.5826.29843, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\MapSurfer.NET\2.3\Core\MapSurfer.System.dll</HintPath>
+      <HintPath>..\..\packages\MapSurfer.NET.Core.2.6\lib\net46\Core\MapSurfer.System.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -99,7 +104,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

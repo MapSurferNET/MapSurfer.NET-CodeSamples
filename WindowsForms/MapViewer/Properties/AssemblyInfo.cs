@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MapSurfer.NET")]
-[assembly: AssemblyCopyright("Copyright © MapSurfer.NET 2008-2015")]
+[assembly: AssemblyCopyright("Copyright © MapSurfer.NET 2008-2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

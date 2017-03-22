@@ -25,7 +25,7 @@ namespace MapSurfer.Samples
       Application.SetCompatibleTextRenderingDefault(false);
 
       string version = MSNUtility.TryDetectInstalledVersion();  // or one can define version manually MSNUtility.SetCurrentMSNVersion(..)
-      MSNUtility.SetCurrentMSNVersion(version);
+      MSNUtility.SetCurrentMSNVersion("2.6");
       AssemblyLoader.AddSearchPath(Path.Combine(MSNUtility.GetMSNInstallPath(), "Studio"));
       AssemblyLoader.Register(AppDomain.CurrentDomain, version);
 
